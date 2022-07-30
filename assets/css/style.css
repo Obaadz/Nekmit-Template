@@ -1,0 +1,113 @@
+body {
+  height: 500vh;
+}
+
+header {
+  width: 100vw;
+  position: absolute;
+  margin-top: 50px;
+}
+
+header .container {
+  height: 58px;
+  background-color: #1e556b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+header .logo {
+  color: #fff;
+}
+
+header .logo span {
+  transition: color 0.3s;
+}
+header .logo span:hover {
+  color: rgb(255 232 232 / 90%);
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+}
+
+header .menu ul {
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+}
+header .menu li {
+  position: relative;
+}
+header .menu li a {
+  padding: 20px 15px;
+}
+header .menu ul li.active {
+  color: #0ac6fc;
+}
+header .menu li a::after {
+  content: "";
+  position: absolute;
+  padding: 0 0;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  background-color: #0ac6fc;
+  opacity: 0;
+  transition: opacity 0.6s, padding 0.3s;
+}
+header .menu li:hover a::after {
+  opacity: 1;
+  padding: 0 50%;
+}
+/*  */
+/*  */
+/*  */
+.hero {
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.hero .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero article {
+  max-width: 70vw;
+}
+
+.hero article h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .hero article {
+    max-width: unset;
+  }
+
+  .hero article h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero article p {
+  max-width: 70ch;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero article .btns button {
+  text-transform: uppercase;
+}
+
+.hero article .btns button:first-child {
+  margin-right: 20px;
+}
