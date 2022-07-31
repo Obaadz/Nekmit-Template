@@ -331,3 +331,49 @@ header .menu li:hover a::after {
     display: none;
   }
 }
+/*  */
+/*  */
+/*  */
+.card-group {
+  padding: 40px 0;
+}
+
+.card-group .cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-group .card {
+  max-width: 300px;
+}
+
+.card-group .card img {
+  border-radius: 5px;
+}
+
+.card-group .card h3 {
+  color: #0ac6fc;
+  font-weight: normal;
+  margin: 20px 0 5px;
+}
+
+.card-group .card p {
+  color: #474747;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+@media (max-width: 991px) {
+  .card-group .cards {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-group .card {
+    max-width: 400px;
+  }
+}
