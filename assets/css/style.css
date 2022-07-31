@@ -382,3 +382,144 @@ header .menu li.active a::after {
     max-width: 400px;
   }
 }
+
+/* website footer */
+footer {
+  background-color: #1e556b;
+  padding: 40px 0;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr;
+  color: #fff;
+  line-height: 1.6;
+  gap: 30px;
+}
+
+footer .container h2 {
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+footer .container p {
+  font-size: 0.9rem;
+}
+
+footer .box:nth-child(1) p {
+  margin-bottom: 20px;
+}
+
+footer .box:nth-child(1) .social a i {
+  font-size: 1.2rem;
+  background-color: #347688;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer .box:nth-child(1) .social a + a {
+  margin-left: 10px;
+}
+
+footer .box:nth-child(2) .list {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .box:nth-child(2) .list a {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #0ac6fc;
+}
+
+footer .box:nth-child(3) form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+footer .box:nth-child(3) input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #347688;
+  border: 1px solid transparent;
+  transition: border 0.3s, background-color 0.3s;
+  color: #ffffff9a;
+}
+
+footer .box:nth-child(3) input:focus {
+  background-color: #43a5cd;
+  border-color: #fff;
+  color: #fff;
+}
+
+footer .box:nth-child(3) button {
+  background-color: #53c7fc;
+  border: 1px solid transparent;
+}
+
+footer .box:nth-child(3) button:hover {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+footer .box:nth-child(4) .items {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .box:nth-child(4) .item {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+footer .box:nth-child(4) .item a {
+  color: #0ac6fc;
+}
+
+footer .box:nth-child(4) .item time {
+  font-size: 0.675em;
+  margin: 5px 0 10px;
+}
+
+footer .box:nth-child(4) .items .item:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0;
+}
+
+@media (max-width: 991px) {
+  footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* copyrights section */
+.copyrights {
+  background-color: #296b8a;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.copyrights .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.copyrights .container a {
+  color: #0ac6fc;
+}
