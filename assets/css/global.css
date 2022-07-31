@@ -103,3 +103,43 @@ button.trans:hover {
   background-color: #53c7fc;
   border: 1px solid transparent;
 }
+
+.heading {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #474747;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  user-select: none;
+}
+
+.heading h2 {
+  font-weight: 600;
+}
+
+.heading p {
+  order: -1;
+  font-size: 0.9em;
+}
+
+.heading h2::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(57 65 72 / 83%);
+  width: 40%;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: border 0.3s, width 0.5s;
+}
+
+.heading:hover h2::after {
+  border-bottom: 2px solid rgb(57 65 72 / 83%);
+  width: 60%;
+}

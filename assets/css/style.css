@@ -117,7 +117,7 @@ header .menu li:hover a::after {
 /*  */
 .contact {
   background-color: #296b8a;
-  padding: 40px;
+  padding: 40px 0;
 }
 .contact .container {
   display: flex;
@@ -185,4 +185,84 @@ header .menu li:hover a::after {
 .contact .box:last-child a:hover ~ div .location::after,
 .contact .box .location:hover::after {
   padding: 0 50%;
+}
+/*  */
+/*  */
+/*  */
+.services {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.services .box-container {
+  display: flex;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  justify-content: space-between;
+}
+
+.services .box {
+  position: relative;
+  flex-basis: 30%;
+  border: 1px solid #0ac6fc;
+  padding: 30px 20px;
+  color: #434343;
+  background-color: #f8f9f8;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .services .box-container {
+    justify-content: center;
+  }
+  .services .box {
+    flex-basis: 80%;
+  }
+}
+
+.services .box i {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #fff;
+  background-color: #215a73;
+  padding: 15px;
+  font-size: 1.6rem;
+  right: 20px;
+  top: -30px;
+  border-radius: 50%;
+}
+
+.services .box p {
+  line-height: 1.6;
+  font-size: 0.8rem;
+  margin: 20px 0;
+}
+
+.services .box span {
+  position: relative;
+  transition: margin 0.3s;
+}
+
+.services .box:hover span {
+  margin-left: 2px;
+  -moz-animation: go-right 1s ease-in-out infinite 0.3s;
+  -webkit-animation: go-right 1s ease-in-out infinite 0.3s;
+  -o-animation: go-right 1s ease-in-out infinite 0.3s;
+  animation: go-right 1s ease-in-out infinite 0.3s;
+}
+
+@keyframes go-right {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    left: 0px;
+  }
 }
